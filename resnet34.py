@@ -1,17 +1,17 @@
+
 #coding=utf-8
 from tensorflow.keras.models import Model
-from tensorflow.keras.layers import Input,Dense,Dropout,BatchNormalization,Conv2D,MaxPooling2D,AveragePooling2D,concatenate,Activation,ZeroPadding2D
+from tensorflow.keras.layers import Input,Dense,Dropout,BatchNormalization,Conv2D,MaxPooling2D,AveragePooling2D,Activation,ZeroPadding2D
 from tensorflow.keras.layers import add,Flatten
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from keras.layers.convolutional import Conv2D,MaxPooling2D,AveragePooling2D
-from tensorflow.keras.optimizers import Adam
+
 
 import numpy as np
 import pandas as pd
-import tensorflow as tf
-from tensorflow import keras
-seed = 7
-np.random.seed(seed)
+
+
+
 
 
 
@@ -128,5 +128,3 @@ print(pd.crosstab(true_label,predict_label,rownames=['label'],colnames=['predict
 
 
 model.save(WEIGHTS_FINAL)
-
-
